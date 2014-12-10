@@ -1,0 +1,215 @@
+/********** Imports **********/
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/********** Variables **********/
+/********** Base **********/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, nav {
+  font-family: 'Droid Serif', serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+
+section {
+  padding: 80px 0;
+}
+
+/********** Layout **********/
+h2.title {
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+
+section img {
+  margin: 0 auto;
+}
+
+/********** Modules **********/
+/********** Welcome **********/
+.welcome {
+  background: url("images/welcome_2.jpg") center center no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  text-align: center;
+  min-height: 300px;
+  color: white;
+}
+
+.welcome h3 {
+  margin-bottom: 25px;
+}
+
+.welcome > .container {
+  max-width: 500px;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome h1 {
+    font-size: 3.5rem;
+  }
+  .welcome h3 {
+    font-size: 1.5rem;
+  }
+}
+/********** Menu **********/
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-quiet {
+  background: #7d6660;
+  border-radius: 0;
+  font-family: 'Raleway', serif;
+  letter-spacing: 1.5px;
+}
+.navbar-quiet .navbar-inner {
+  padding: 15px;
+}
+.navbar-quiet a {
+  color: white;
+}
+.navbar-quiet .icon-bar {
+  border: 1px solid white;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #604e4a;
+  height: 100%;
+}
+
+/********** About **********/
+.about {
+  background: #fafaf2;
+}
+.about h2 {
+  font-size: 2.3rem;
+}
+
+.about > .container {
+  max-width: 768px;
+}
+
+.about-picture {
+  margin-bottom: 45px;
+}
+.about-picture img {
+  /*height: 300px;*/
+  /*width: 300px;*/
+  border-radius: 150px;
+}
+
+.about-credentials {
+  text-align: center;
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 992px) {
+  .about-credentials {
+    margin-top: 75px;
+  }
+}
+
+/********** Acupuncture **********/
+.acupuncture {
+  background: #9b9979;
+}
+.acupuncture ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .acupuncture ul {
+    text-align: left;
+  }
+}
+.acupuncture ul li {
+  line-height: 200%;
+  font-weight: 700;
+}
+
+.acupuncture > .container {
+  max-width: 900px;
+}
+
+.acupuncture-picture {
+  margin: 45px;
+}
+@media screen and (min-width: 992px) {
+  .acupuncture-picture {
+    margin: 0;
+  }
+}
+
+/********** Zero Balancing **********/
+.zero-balancing {
+  background: #fafaf2;
+}
+
+.zero-balancing > .container {
+  max-width: 900px;
+}
+
+.zero-balancing-picture {
+  margin-bottom: 45px;
+}
+
+/********** Contact **********/
+.contact {
+  background: url("images/contact_2.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.contact > .container {
+  max-width: 500px;
+  border: 1px solid white;
+  margin-top: 45px;
+  background: white;
+  opacity: .5;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.contact h3 {
+  line-height: 150%;
+}
+
+.contact-email {
+  color: blue;
+  cursor: pointer;
+}
+
+/********** Utility Classes **********/
+.stuck {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  opacity: .8;
+}
