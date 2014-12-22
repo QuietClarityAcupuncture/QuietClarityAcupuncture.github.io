@@ -225,7 +225,7 @@ section img {
 
 /********** Contact **********/
 .contact {
-  background: url("images/contact_2.jpg") center center no-repeat;
+  background: url("images/contact.jpg") center center no-repeat;
   background-size: cover;
   height: 500px;
   padding: 0;
@@ -274,6 +274,11 @@ section img {
   text-decoration: none;
   color: #5a87a0;
 }
+@media screen and (max-width: 500px) {
+  .contact-email {
+    font-size: 1.6rem;
+  }
+}
 
 /********** Utility Classes **********/
 .stuck {
@@ -289,4 +294,5 @@ section img {
   text-align: center;
   color: #874769;
   line-height: 175%;
+  font-size: 1.1rem;
 }
